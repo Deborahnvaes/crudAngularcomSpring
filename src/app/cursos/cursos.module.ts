@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { CursosRoutingModule } from './cursos-routing.module';
 import { CursosComponent } from './cursos/cursos.component';
-import {MatTableModule} from '@angular/material/table';
-
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,8 @@ import {MatTableModule} from '@angular/material/table';
   imports: [
     CommonModule,
     CursosRoutingModule,
-    MatTableModule
+    AppMaterialModule,
+    SharedModule
   ]
 })
 export class CursosModule { }
